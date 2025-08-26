@@ -6,8 +6,8 @@ nav_order: 8
 dropdown: true
 children:
   - title: cv
-    permalink: /assets/pdf/cv_dave_vv.pdf
+    permalink: 
   - title: divider
   - title: resume
-    permalink: /assets/pdf/resume_dave_vv.pdf
+    permalink: 
 ---
