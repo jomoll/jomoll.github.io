@@ -65,11 +65,11 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-linkedin_username: davevanveen # your LinkedIn user name
-scholar_userid: lP73UFAAAAAJ&hl # your Google Scholar ID
-github_username: davevanveen # your GitHub user name
+linkedin_username: johannes-moll-ba7160203 # your LinkedIn user name
+scholar_userid: oXUB1p8AAAAJ&hl # your Google Scholar ID
+github_username: jomoll # your GitHub user name
 #instagram_id: dave.vv
-strava_userid: davevanveen
+strava_userid: 
 # to add more socials, see _includes/socials.html
 
 contact_note: >
@@ -82,11 +82,11 @@ contact_note: >
 # For Google Analytics, see https://support.google.com/analytics/answer/10447272?hl=en&ref_topic=14088998&sjid=5129943941510317771-SA#zippy=%2Cgoogle-sites
 # and follow the instructions for Google Sites. You will need to create a Google Analytics property and copy the Google tag ID.
 #google_analytics: UA-XXXXXXXXX # out your google-analytics code
-google_analytics: G-X5W2JLZ7D9 # out your google-analytics code
+google_analytics: UA-XXXXXXXX # out your google-analytics code
 panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
-google_site_verification: tZL4j4eqDC6SiGcLdOYU5sTBM_Qy5IScj1TjcOGX6Es # your google-site-verification ID (Google Search Console)
+google_site_verification:  # your google-site-verification ID (Google Search Console)
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
@@ -253,8 +253,8 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [VanVeen, Van Veen]
-  first_name: [Dave, D., D.*]
+  last_name: [Moll]
+  first_name: [Johannes, J., J.*]
 
   style: apa
   locale: en
