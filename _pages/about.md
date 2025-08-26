@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Candidate <br> Technical University of Munich</a> 
+subtitle: PhD Candidate <br> Technical University of Munich
 
 profile:
   align: right
@@ -25,6 +25,6 @@ My research includes two major threads:
 <div style="margin-top: 30px;"></div>
 
 ## bio
-Prior to beginning his PhD, Johannes spent six months as a research assistant at the <a href="https://aimi.stanford.edu/">Artificial Intelligence in Medicine & Imaging (AIMI)</a> center at Stanford University, where he was supervised by <a href="https://curtlanglotz.com">Curtis Langlotz and <a href="https://aimi.stanford.edu/people/jean-benoit-delbrouck-0">Jean-Benoit Delbrouck.
+Prior to beginning his PhD, Johannes spent six months as a research assistant at the <a href="https://aimi.stanford.edu/">Artificial Intelligence in Medicine & Imaging (AIMI)</a> center at Stanford University, where he was supervised by <a href="https://curtlanglotz.com">Curtis Langlotz</a> and <a href="https://aimi.stanford.edu/people/</jean-benoit-delbrouck-0">Jean-Benoit Delbrouck</a>.
 
 <div style="margin-top: 40px;"></div>
