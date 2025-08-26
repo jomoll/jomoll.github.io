@@ -16,7 +16,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Currently I am a PhD candidate in Technical University of Munich advised by <a href="https://www.professoren.tum.de/en/rueckert-daniel">Daniel Rueckert</a>, <a href="https://www.radiologie.mri.tum.de/en/team/keno_bressem">Keno Bressem</a>, and <a href="https://www.ias.tum.de/ias/adams-lisa/">Lisa Adams.<br>
+Currently I am a PhD candidate at the Technical University of Munich supervised by <a href="https://www.professoren.tum.de/en/rueckert-daniel">Daniel Rueckert</a> and advised by <a href="https://www.radiologie.mri.tum.de/en/team/keno_bressem">Keno Bressem</a>, <a href="https://www.ias.tum.de/ias/adams-lisa/">Lisa Adams</a>, and <a href="https://www.kiinformatik.mri.tum.de/de/team/jiazhen_pan"> Jiazhen Pan</a>.
 
 My research includes two major threads:
 1. developing vision–language models to improve healthcare outcomes.
