@@ -52,7 +52,7 @@ header.post-header {
             <!-- Publication Links -->
             <div class="mt-4 mb-4">
                 <a href="https://arxiv.org/pdf/2604.24473" target="_blank" class="btn btn-dark btn-lg rounded-pill me-2 mb-2">
-                    <i class="ai ai-arxiv me-1"></i> arXiv
+                    <i class="ai ai-arxiv me-1"></i> Paper
                 </a>
                 <a href="https://github.com/jomoll/onco-agent" target="_blank" class="btn btn-dark btn-lg rounded-pill me-2 mb-2">
                     <i class="fab fa-github me-1"></i> Code
@@ -62,11 +62,11 @@ header.post-header {
     </div>
 </div>
 
-<div class="container mt-5">
+<div class="container mt-4">
     <div class="row justify-content-center">
         <div class="col-lg-10">
             <h2 class="text-center mb-4">About</h2>
-            <p>Onco-Agent is a multi-turn retrieval-augmented agent for answering structured clinical questions from patient records. It is the system described in our paper: <em>Agentic clinical reasoning over longitudinal myeloma records: a retrospective evaluation against expert consensus</em>.</p>
+            <p>Onco-Agent is a multi-turn retrieval-augmented agent for answering structured clinical questions from patient records. It is the system described in our paper: <a href="https://arxiv.org/pdf/2604.24473"> Agentic clinical reasoning over longitudinal myeloma records: a retrospective evaluation against expert consensus</a>.</p>
             <p>Given a patient's clinical record (discharge letters, radiology reports, lab values, etc.) and a doctor's question, the agent:</p>
             <ol>
                 <li><strong>Plans</strong> which information to retrieve and which domain skills to apply.</li>
