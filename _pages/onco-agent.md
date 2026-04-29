@@ -64,25 +64,46 @@ header.post-header {
 
 <div class="container mt-5">
     <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <h2 class="text-center mb-4">About</h2>
+            <p>Onco-Agent is a multi-turn retrieval-augmented agent for answering structured clinical questions from patient records. It is the system described in our paper: <em>Agentic clinical reasoning over longitudinal myeloma records: a retrospective evaluation against expert consensus</em>.</p>
+            <p>Given a patient's clinical record (discharge letters, radiology reports, lab values, etc.) and a doctor's question, the agent:</p>
+            <ol>
+                <li><strong>Plans</strong> which information to retrieve and which domain skills to apply.</li>
+                <li><strong>Retrieves</strong> relevant report sections and lab values using specialized retrieval tools with date and type filters.</li>
+                <li><strong>Applies</strong> domain-specific skills (clinical workflows, evidence ranking, scoring systems).</li>
+                <li><strong>Produces</strong> a structured answer with inline citations.</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
         <div class="col-lg-12">
             <h2 class="text-center mb-4">Demo</h2>
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <video class="w-100" controls muted playsinline style="border-radius: 8px;">
-                        <source src="{{ '/assets/video/example_1.mov' | relative_url }}" type="video/mp4">
-                    </video>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <video class="w-100" controls muted playsinline style="border-radius: 8px;">
-                        <source src="{{ '/assets/video/example_2.mov' | relative_url }}" type="video/mp4">
-                    </video>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <video class="w-100" controls muted playsinline style="border-radius: 8px;">
-                        <source src="{{ '/assets/video/example_3.mov' | relative_url }}" type="video/mp4">
-                    </video>
-                </div>
-            </div>
+            <table style="width:100%; table-layout:fixed;">
+                <tr>
+                    <td align="center" style="width:33%; padding: 0 8px;">
+                        <video controls muted playsinline style="width:100%; border-radius:8px;">
+                            <source src="{{ '/assets/video/example_1.mov' | relative_url }}" type="video/mp4">
+                        </video>
+                        <br>Single-document lookup
+                    </td>
+                    <td align="center" style="width:33%; padding: 0 8px;">
+                        <video controls muted playsinline style="width:100%; border-radius:8px;">
+                            <source src="{{ '/assets/video/example_2.mov' | relative_url }}" type="video/mp4">
+                        </video>
+                        <br>Temporal reasoning
+                    </td>
+                    <td align="center" style="width:33%; padding: 0 8px;">
+                        <video controls muted playsinline style="width:100%; border-radius:8px;">
+                            <source src="{{ '/assets/video/example_3.mov' | relative_url }}" type="video/mp4">
+                        </video>
+                        <br>Multi-criteria synthesis
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </div>
