@@ -19,7 +19,7 @@ header.post-header {
 <div class="container mt-5">
     <div class="row justify-content-center text-center">
         <div class="col-lg-12">
-            <h1 class="mb-4">Agentic Clinical Reasoning over Longitudinal Myeloma Records: A Retrospective Evaluation against Expert Consensus</h1>
+            <h1 class="mb-4">Agentic Clinical Reasoning over Longitudinal Myeloma Records:<br>A Retrospective Evaluation against Expert Consensus</h1>
             <div class="mb-3">
                 <a href="https://jomoll.github.io">Johannes Moll</a><sup>*,†1,2,3</sup>,
                 Jannik Lübberstedt<sup>†2</sup>,
@@ -51,36 +51,13 @@ header.post-header {
             </div>
             <!-- Publication Links -->
             <div class="mt-4 mb-4">
-                <a href="https://arxiv.org/abs/2604.24473" target="_blank" class="btn btn-dark btn-lg rounded-pill me-2 mb-2">
+                <a href="https://arxiv.org/pdf/2604.24473" target="_blank" class="btn btn-dark btn-lg rounded-pill me-2 mb-2">
                     <i class="ai ai-arxiv me-1"></i> arXiv
                 </a>
-                <a href="https://github.com/onco-agent/onco-agent" target="_blank" class="btn btn-dark btn-lg rounded-pill me-2 mb-2">
+                <a href="https://github.com/jomoll/onco-agent" target="_blank" class="btn btn-dark btn-lg rounded-pill me-2 mb-2">
                     <i class="fab fa-github me-1"></i> Code
                 </a>
             </div>
-        </div>
-    </div>
-</div>
-
-<div class="container mt-4">
-    <div class="row justify-content-center">
-        <div class="col-lg-12">
-            <h2 class="text-center mb-4">Abstract</h2>
-            <p class="text-justify">
-                <strong>Background.</strong> Multiple myeloma is managed through sequential lines of therapy over years to decades, with each treatment decision depending on cumulative disease history distributed across dozens to hundreds of heterogeneous clinical documents. Whether large language model-based systems can synthesise this evidence at a level approaching expert agreement has not been established.
-            </p>
-            <p class="text-justify">
-                <strong>Methods.</strong> A retrospective evaluation was conducted on longitudinal clinical records of 811 patients with multiple myeloma treated at a tertiary medical centre between 2001 and 2026, covering 44,962 documents and 1,334,677 laboratory values, with external validation on MIMIC-IV. An agentic reasoning system was compared against single-pass retrieval-augmented generation (RAG), iterative RAG, and full-context input on 469 patient–question pairs derived from 48 templates stratified into three complexity levels. The reference standard was established by independent double annotation from four oncologists with adjudication by a senior haematologist.
-            </p>
-            <p class="text-justify">
-                <strong>Findings.</strong> Iterative retrieval-augmented generation and full-context input converged on a shared performance ceiling (75·4% versus 75·8%, Bonferroni-corrected <em>p</em> = 1·00). The agentic system reached 79·6% concordance (95% CI 76·4–82·8), significantly exceeding both baselines (+3·8 and +4·2 percentage points; <em>p</em> = 0·006 and 0·007). Gains increased with question complexity, reaching +9·4 percentage points on criteria-based synthesis (<em>p</em> = 0·032), and with record length, reaching +13·5 percentage points in the top decile (exploratory, <em>n</em> = 10). The system error rate (12·2%) was comparable to expert disagreement (13·6%), but severity distributions were inverted, with 57·8% of system errors classified as clinically significant against 18·8% of expert disagreements.
-            </p>
-            <p class="text-justify">
-                <strong>Interpretation.</strong> Agentic reasoning was the only approach to exceed the shared performance ceiling, with gains concentrated on the most complex questions and longest records. The greater clinical consequence of residual system errors relative to expert disagreement indicates that prospective evaluation in routine care will be required before these findings translate into measurable patient benefit.
-            </p>
-            <p class="text-justify">
-                <strong>Funding.</strong> Bayern Innovativ (Bavarian State Ministry of Economics), Grant Number: LSM-2403-0006.
-            </p>
         </div>
     </div>
 </div>
@@ -110,6 +87,25 @@ header.post-header {
     </div>
 </div>
 
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-12">
+            <h2 class="text-center mb-4">Abstract</h2>
+            <p class="text-justify">
+                <strong>Background.</strong> Multiple myeloma is managed through sequential lines of therapy over years to decades, with each treatment decision depending on cumulative disease history distributed across dozens to hundreds of heterogeneous clinical documents. Whether large language model-based systems can synthesise this evidence at a level approaching expert agreement has not been established.
+            </p>
+            <p class="text-justify">
+                <strong>Methods.</strong> A retrospective evaluation was conducted on longitudinal clinical records of 811 patients with multiple myeloma treated at a tertiary medical centre between 2001 and 2026, covering 44,962 documents and 1,334,677 laboratory values, with external validation on MIMIC-IV. An agentic reasoning system was compared against single-pass retrieval-augmented generation (RAG), iterative RAG, and full-context input on 469 patient–question pairs derived from 48 templates stratified into three complexity levels. The reference standard was established by independent double annotation from four oncologists with adjudication by a senior haematologist.
+            </p>
+            <p class="text-justify">
+                <strong>Findings.</strong> Iterative retrieval-augmented generation and full-context input converged on a shared performance ceiling (75·4% versus 75·8%, Bonferroni-corrected <em>p</em> = 1·00). The agentic system reached 79·6% concordance (95% CI 76·4–82·8), significantly exceeding both baselines (+3·8 and +4·2 percentage points; <em>p</em> = 0·006 and 0·007). Gains increased with question complexity, reaching +9·4 percentage points on criteria-based synthesis (<em>p</em> = 0·032), and with record length, reaching +13·5 percentage points in the top decile (exploratory, <em>n</em> = 10). The system error rate (12·2%) was comparable to expert disagreement (13·6%), but severity distributions were inverted, with 57·8% of system errors classified as clinically significant against 18·8% of expert disagreements.
+            </p>
+            <p class="text-justify">
+                <strong>Interpretation.</strong> Agentic reasoning was the only approach to exceed the shared performance ceiling, with gains concentrated on the most complex questions and longest records. The greater clinical consequence of residual system errors relative to expert disagreement indicates that prospective evaluation in routine care will be required before these findings translate into measurable patient benefit.
+            </p>
+        </div>
+    </div>
+</div>
 <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
         <h2 class="title has-text-centered">BibTeX</h2>
