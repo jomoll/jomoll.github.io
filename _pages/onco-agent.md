@@ -62,9 +62,10 @@ header.post-header {
     </div>
 </div>
 
+
 <div class="container mt-4">
     <div class="row justify-content-center">
-        <div class="col-lg-10">
+        <div class="col-lg-12">
             <h2 class="text-center mb-4">About</h2>
             <p>Onco-Agent is a multi-turn retrieval-augmented agent for answering structured clinical questions from patient records. It is the system described in our paper: <a href="https://arxiv.org/pdf/2604.24473"> Agentic clinical reasoning over longitudinal myeloma records: a retrospective evaluation against expert consensus</a>.</p>
             <p>Given a patient's clinical record (discharge letters, radiology reports, lab values, etc.) and a doctor's question, the agent:</p>
