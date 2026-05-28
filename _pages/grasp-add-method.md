@@ -25,26 +25,28 @@ A method is a subclass of `grasp.Method`. The harness constructs it with a resol
 
 ```python
 from grasp import Method
+from grasp.agent import build_agent
 
 class MyMethod(Method):
     # self.config: dict   self.run_dir: Path   self.task: Task
     def run(self) -> None:
         dev = self.task.samples("dev")
         val = self.task.samples("val")
+        agent = build_agent(self.config["agent"])
 
         for epoch in range(self.config["cycle"]["epochs"]):
             for sample in dev:
-                rollout = self.task.rollout(sample, self._agent())
+                rollout = self.task.rollout(sample, agent)
                 correct = self.task.evaluate(sample, rollout)
                 # ... update your memory / skills / prompt from failures ...
 
             # monitor on val (do not learn from it)
-            score = sum(self.task.evaluate(s, self.task.rollout(s, self._agent()))
+            score = sum(self.task.evaluate(s, self.task.rollout(s, agent))
                         for s in val) / len(val)
             # ... write artifacts into self.run_dir ...
 ```
 
-You build the executing agent with `grasp.agent.build_agent(self.config["agent"])`. If your method injects learned context, wrap the agent the way GRASP does in `grasp/cycle.py`.
+If your method injects learned context, wrap the agent the way GRASP does in `grasp/cycle.py` (see `SkillAwareAgent`).
 
 ### Conventional outputs
 

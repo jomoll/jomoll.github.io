@@ -7,6 +7,17 @@ nav: false
 og_image: 
 ---
 
+<script>
+(function() {
+  var prev = document.documentElement.getAttribute('data-theme');
+  document.documentElement.setAttribute('data-theme', 'light');
+  window.addEventListener('pagehide', function() {
+    if (prev === null) document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', prev);
+  });
+})();
+</script>
+
 <style>
 .page-header,
 .post-header,
@@ -86,7 +97,7 @@ header.post-header {
   word-break: break-word;
 }
 .skill-content-area h5 { font-size: 0.9rem; font-weight: 700; margin-top: 1em; margin-bottom: 0.3em; }
-.skill-content-area code {
+.skill-content-area :not(pre) > code {
   background: #e9ecef;
   padding: 0.1em 0.3em;
   border-radius: 3px;
@@ -100,6 +111,13 @@ header.post-header {
   font-size: 0.8rem;
   overflow-x: auto;
   white-space: pre;
+}
+.skill-content-area pre code {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  color: inherit;
+  font-size: inherit;
 }
 .nav-btn {
   border-radius: 8px;
@@ -811,8 +829,7 @@ header.post-header {
         <h2 class="text-center mb-4">BibTeX</h2>
         <pre style="background:#f8f9fa; border-radius:8px; padding:1.2rem; font-size:0.85rem;"><code>@article{moll2026grasp,
   title  = {GRASP: Gated Regression-Aware Skill Proposer for Self-Improving LLM Agents},
-  author = {Moll, Johannes and Corbeil, Jean-Philippe and Pan, Jiazhen and
-            Hadamitzky, Martin and Rueckert, Daniel and Adams, Lisa and Bressem, Keno},
+  author = {Moll, Johannes and Corbeil, Jean-Philippe and Pan, Jiazhen and Hadamitzky, Martin and Rueckert, Daniel and Adams, Lisa and Bressem, Keno},
   journal={arXiv preprint },
   year={2026}
 }</code></pre>
