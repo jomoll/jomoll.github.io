@@ -19,8 +19,8 @@ social: true # includes social icons at the bottom of the page
 Currently I am a PhD candidate at the Technical University of Munich supervised by <a href="https://www.professoren.tum.de/en/rueckert-daniel">Daniel Rueckert</a> and advised by <a href="https://www.radiologie.mri.tum.de/en/team/keno_bressem">Keno Bressem</a>, <a href="https://www.ias.tum.de/ias/adams-lisa/">Lisa Adams</a>, and <a href="https://www.kiinformatik.mri.tum.de/de/team/jiazhen_pan">Jiazhen Pan</a>.
 
 My research includes two major threads:
-1. developing vision–language models to improve healthcare outcomes.
-2. evaluating models for clinical applications, with an emphasis on assessing reasoning, faithfulness, and reliability of LLMs and VLMs in real medical use cases.
+1. Building multi-turn, tool-using agents that can reason over longitudinal patient records, retrieve relevant evidence, and produce structured, citation-grounded clinical answers.
+2. Improving model accuracy and interpretability with chain-of-thought traces and faithfulness evaluation.
 
 <div style="margin-top: 30px;"></div>
 

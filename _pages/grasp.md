@@ -766,6 +766,40 @@ header.post-header {
 
 <hr class="section-divider">
 
+<!-- ============================================================ EXTEND -->
+<div class="container mb-2">
+  <div class="row justify-content-center">
+    <div class="col-lg-9">
+      <h2 class="text-center mb-2">Extend GRASP</h2>
+      <p class="text-center text-muted mb-4" style="font-size:0.92rem;">
+        The codebase is designed to be extended. You can plug in your own self-improvement method and benchmark it against GRASP on the same tasks, or deploy GRASP on a new environment by implementing a single interface.
+      </p>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <a href="{{ '/grasp/add-method/' | relative_url }}" class="text-decoration-none">
+            <div class="card h-100 border-0 shadow-sm rounded-3 p-3" style="transition:box-shadow 0.15s;" onmouseover="this.style.boxShadow='0 4px 20px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow=''">
+              <div class="mb-2" style="font-size:1.4rem;">⚙️</div>
+              <h5 class="fw-700 mb-1" style="font-size:1rem; font-weight:700;">Benchmark your method</h5>
+              <p class="text-muted mb-0" style="font-size:0.88rem;">Subclass <code>grasp.Method</code> and run your own self-improvement approach on the same tasks GRASP uses for apples-to-apples comparison.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="{{ '/grasp/add-task/' | relative_url }}" class="text-decoration-none">
+            <div class="card h-100 border-0 shadow-sm rounded-3 p-3" style="transition:box-shadow 0.15s;" onmouseover="this.style.boxShadow='0 4px 20px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow=''">
+              <div class="mb-2" style="font-size:1.4rem;">🔌</div>
+              <h5 class="fw-700 mb-1" style="font-size:1rem; font-weight:700;">Add a new task</h5>
+              <p class="text-muted mb-0" style="font-size:0.88rem;">Implement <code>grasp.Task</code> with three methods to deploy GRASP on any new environment, with optional hooks for sharper skill proposals.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
 <!-- ============================================================ BIBTEX -->
 <section class="section" id="BibTeX">
   <div class="container">
