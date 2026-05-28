@@ -160,8 +160,11 @@ header.post-header {
 <div class="container mb-5">
   <div class="row justify-content-center">
     <div class="col-lg-11">
-      <img src="{{ '/assets/img/emnlp26/grasp_banner3.png' | relative_url }}"
-           alt="GRASP banner" style="width:100%; border-radius:10px;">
+      <picture>
+        <source media="(max-width: 767px)" srcset="{{ '/assets/img/emnlp26/grasp_linkedin_square_collab.png' | relative_url }}">
+        <img src="{{ '/assets/img/emnlp26/grasp_banner3.png' | relative_url }}"
+             alt="GRASP banner" style="width:100%; border-radius:10px;">
+      </picture>
     </div>
   </div>
 </div>
