@@ -160,7 +160,7 @@ header.post-header {
         <!--span class="badge rounded-pill px-3 py-2" style="background:#212529; color:white; font-size:0.9rem;">EMNLP 2026</span-->
       <!--/div-->
       <div class="mt-2 mb-4">
-        <a href="{{ '/assets/pdf/EMNLP2026.pdf' | relative_url }}" target="_blank" class="btn btn-dark btn-lg rounded-pill me-2 mb-2">
+        <a href="https://arxiv.org/abs/2605.29668" target="_blank" class="btn btn-dark btn-lg rounded-pill me-2 mb-2">
           <i class="ai ai-arxiv me-1"></i> Paper
         </a>
         <a href="https://github.com/jomoll/GRASP" target="_blank" class="btn btn-dark btn-lg rounded-pill me-2 mb-2">
@@ -830,7 +830,7 @@ header.post-header {
         <pre style="background:#f8f9fa; border-radius:8px; padding:1.2rem; font-size:0.85rem;"><code>@article{moll2026grasp,
   title  = {GRASP: Gated Regression-Aware Skill Proposer for Self-Improving LLM Agents},
   author = {Moll, Johannes and Corbeil, Jean-Philippe and Pan, Jiazhen and Hadamitzky, Martin and Rueckert, Daniel and Adams, Lisa and Bressem, Keno},
-  journal={arXiv preprint },
+  journal={arXiv preprint arXiv:2605.29668},
   year={2026}
 }</code></pre>
       </div>
