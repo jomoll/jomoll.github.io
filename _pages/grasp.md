@@ -156,9 +156,9 @@ header.post-header {
         <br><sup>2</sup>Microsoft Healthcare &amp; Life Sciences
         <br><sup>†</sup>Equal senior authorship
       </div>
-      <!--div class="mb-4"-->
-        <!--span class="badge rounded-pill px-3 py-2" style="background:#212529; color:white; font-size:0.9rem;">EMNLP 2026</span-->
-      <!--/div-->
+      <div class="mb-4">
+        <span class="badge rounded-pill px-3 py-2" style="background:#4b2e83; color:white; font-size:0.9rem;">Accepted to EMNLP 2026 &middot; Main Conference</span>
+      </div>
       <div class="mt-2 mb-4">
         <a href="https://arxiv.org/abs/2605.29668" target="_blank" class="btn btn-dark btn-lg rounded-pill me-2 mb-2">
           <i class="ai ai-arxiv me-1"></i> Paper
