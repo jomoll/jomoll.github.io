@@ -7,17 +7,6 @@ nav: false
 og_image: 
 ---
 
-<script>
-(function() {
-  var prev = document.documentElement.getAttribute('data-theme');
-  document.documentElement.setAttribute('data-theme', 'light');
-  window.addEventListener('pagehide', function() {
-    if (prev === null) document.documentElement.removeAttribute('data-theme');
-    else document.documentElement.setAttribute('data-theme', prev);
-  });
-})();
-</script>
-
 <style>
 .page-header,
 .post-header,
@@ -50,6 +39,11 @@ header.post-header {
   .oa-finding { flex-direction: column; align-items: flex-start; gap: 0.35rem; }
   .oa-finding-value { flex-basis: auto; }
 }
+html[data-theme="dark"] .oa-finding { background: rgba(255,255,255,0.05); }
+html[data-theme="dark"] .oa-finding-value { filter: brightness(1.4); }
+html[data-theme="dark"] .oa-finding-label { color: var(--global-text-color); }
+html[data-theme="dark"] .oa-finding-detail { color: #adb5bd; }
+html[data-theme="dark"] .section-divider { border-top-color: var(--global-divider-color); }
 .oa-finding-label {
   font-size: 0.9rem; font-weight: 600; color: #212529; margin-bottom: 0.3rem;
 }
@@ -175,7 +169,7 @@ header.post-header {
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-12">
-      <h2 class="text-center mb-2">How Onco-Agent Works</h2>
+      <h2 class="text-center mb-2">How It Works</h2>
       <p class="text-center text-muted mb-4" style="font-size:0.92rem;">
         Onco-Agent separates clinical reasoning from language generation. Question-specific reasoning protocols come from an indexed clinical <em>skill library</em>, evidence is gathered by an explicit tool-use plan, and contradictions are resolved by deterministic policies before the answer is written. The example below follows one eligibility question through the pipeline.
       </p>
@@ -260,6 +254,8 @@ header.post-header {
 .oa-step-desc {
   font-size: 0.92rem; color: #495057; margin-bottom: 1rem; line-height: 1.6;
 }
+html[data-theme="dark"] .oa-step-desc { color: #adb5bd; }
+html[data-theme="dark"] .oa-step-dot.inactive { background: var(--global-bg-color); }
 .oa-example-box {
   background: #1a1d23;
   border-radius: 8px;
