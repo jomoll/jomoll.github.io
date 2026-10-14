@@ -21,6 +21,7 @@ header.post-header {
 .container[role="main"] .container { max-width: none; padding-left: 0; padding-right: 0; }
 
 /* Key findings */
+.oa-findings { display: flex; flex-direction: column; gap: 1.25rem; }
 .oa-finding {
   display: flex;
   align-items: center;
@@ -109,8 +110,8 @@ html[data-theme="dark"] .section-divider { border-top-color: var(--global-divide
       <p class="text-center text-muted mb-4" style="font-size:0.92rem;">
         811 patients &middot; 44,962 documents &middot; 1,334,677 laboratory values &middot; 469 expert-adjudicated patient-question pairs
       </p>
-      <div class="row g-3">
-        <div class="col-12">
+      <div class="oa-findings">
+        <div>
           <div class="oa-finding" style="border-left-color:#0d6efd;">
             <div class="oa-finding-value" style="color:#0d6efd;">80.1%</div>
             <div class="oa-finding-text">
@@ -119,7 +120,7 @@ html[data-theme="dark"] .section-divider { border-top-color: var(--global-divide
             </div>
           </div>
         </div>
-        <div class="col-12">
+        <div>
           <div class="oa-finding" style="border-left-color:#6f42c1;">
             <div class="oa-finding-value" style="color:#6f42c1;">79.0%</div>
             <div class="oa-finding-text">
@@ -128,7 +129,7 @@ html[data-theme="dark"] .section-divider { border-top-color: var(--global-divide
             </div>
           </div>
         </div>
-        <div class="col-12">
+        <div>
           <div class="oa-finding" style="border-left-color:#198754;">
             <div class="oa-finding-value" style="color:#198754;">+10.3 pp</div>
             <div class="oa-finding-text">
@@ -137,7 +138,7 @@ html[data-theme="dark"] .section-divider { border-top-color: var(--global-divide
             </div>
           </div>
         </div>
-        <div class="col-12">
+        <div>
           <div class="oa-finding" style="border-left-color:#dc3545;">
             <div class="oa-finding-value" style="color:#dc3545;">57.8%</div>
             <div class="oa-finding-text">
