@@ -321,12 +321,12 @@ header.post-header {
       example: `<span class="ex-section">Tool-use plan</span>  <span class="ex-muted">(from workflows.eligibility_assessment)</span>
 <span class="ex-dim">────────────────────────────────────────────────────</span>
 <span class="ex-hi">1</span>  Reconstruct therapy history
-   <span class="ex-key">retrieve_reports</span>(query=<span class="ex-val">"Therapie Linie Daratumumab Lenalidomid Bortezomib"</span>,
+   <span class="ex-key">retrieve_reports</span>(query=<span class="ex-val">"therapy line daratumumab lenalidomide bortezomib"</span>,
                     report_type=<span class="ex-val">["doctor_letter", "tumor_board"]</span>, time_scope=<span class="ex-val">"all"</span>)
    <span class="ex-muted">needs: lines of therapy, exposure per drug class</span>
 
 <span class="ex-hi">2</span>  Response to most recent line
-   <span class="ex-key">retrieve_reports</span>(query=<span class="ex-val">"Progress Remission Ansprechen"</span>, time_scope=<span class="ex-val">"latest"</span>)
+   <span class="ex-key">retrieve_reports</span>(query=<span class="ex-val">"progression remission response"</span>, time_scope=<span class="ex-val">"latest"</span>)
    <span class="ex-muted">needs: refractory / progression status</span>
 
 <span class="ex-hi">3</span>  Organ function
@@ -334,7 +334,7 @@ header.post-header {
                        time_scope=<span class="ex-val">"latest"</span>)
 
 <span class="ex-hi">4</span>  Performance status &amp; active infections
-   <span class="ex-key">retrieve_reports</span>(query=<span class="ex-val">"ECOG Allgemeinzustand Infekt"</span>, time_scope=<span class="ex-val">"latest"</span>)
+   <span class="ex-key">retrieve_reports</span>(query=<span class="ex-val">"ECOG performance status infection"</span>, time_scope=<span class="ex-val">"latest"</span>)
 <span class="ex-dim">────────────────────────────────────────────────────</span>
 <span class="ex-section">Stop when</span>  <span class="ex-muted">every criterion has supporting evidence or is confirmed undocumented</span>`
     },
@@ -344,13 +344,13 @@ header.post-header {
       title: "Execute Tools Iteratively",
       desc: "The plan is executed step by step for up to eight rounds. A structured memory state (query, accumulated evidence, still-missing information, stopping conditions) is updated after every round and decides whether to call a tool, advance, or stop. Report retrieval supports document-type and date filters, laboratory values are fetched by canonical marker, and staging scores (ISS, R-ISS, R2-ISS, HCT-CI) are computed by deterministic calculators rather than by the language model. Duplicate queries are blocked, and empty results progressively broaden the search.",
       example: `<span class="ex-section">Round 1</span>  <span class="ex-key">retrieve_reports</span> <span class="ex-muted">→ 6 sections</span>
-  <span class="ex-val">[1]</span> 2025-10-09 doctor_letter  <span class="ex-muted">"… nach 3 Vortherapien, u.a. Lenalidomid …"</span>
-  <span class="ex-val">[2]</span> 2023-05-29 tumor_board    <span class="ex-muted">"Empfehlung: Daratumumab-Rd"</span>
-  <span class="ex-val">[3]</span> 2023-07-14 doctor_letter  <span class="ex-muted">"Gabe Dara-Rd Zyklus 1 …"</span>
+  <span class="ex-val">[1]</span> 2025-10-09 doctor_letter  <span class="ex-muted">"… after 3 prior lines incl. lenalidomide, bortezomib …"</span>
+  <span class="ex-val">[2]</span> 2023-05-29 tumor_board    <span class="ex-muted">"Recommendation: daratumumab-Rd"</span>
+  <span class="ex-val">[3]</span> 2023-07-14 doctor_letter  <span class="ex-muted">"Dara-Rd cycle 1 administered …"</span>
   <span class="ex-muted">…</span>
 <span class="ex-section">Round 2</span>  <span class="ex-key">retrieve_reports</span>  time_scope=latest <span class="ex-muted">→ 0 results</span>
   <span class="ex-err">empty</span>  <span class="ex-muted">→ retry with top_k doubled</span>  <span class="ex-muted">→ 2 sections</span>
-  <span class="ex-val">[4]</span> 2025-10-09 doctor_letter  <span class="ex-muted">"Progress unter Pomalidomid-Dexamethason"</span>
+  <span class="ex-val">[4]</span> 2025-10-09 doctor_letter  <span class="ex-muted">"Progression on pomalidomide-dexamethasone"</span>
 <span class="ex-section">Round 3</span>  <span class="ex-key">retrieve_lab_values</span> <span class="ex-muted">→ 3 markers</span>
   <span class="ex-val">[5]</span> 2026-02-14 creatinine 0.9 mg/dL · bilirubin 0.6 mg/dL · platelets 142 G/L
 <span class="ex-dim">────────────────────────────────────────────────────</span>
