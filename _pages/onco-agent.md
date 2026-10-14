@@ -27,16 +27,28 @@ header.post-header {
 }
 .section-divider { border: none; border-top: 2px solid #e9ecef; margin: 3rem 0; }
 
+/* Widen this page beyond the site-wide max_width */
+.container[role="main"] { max-width: 1140px; }
+.container[role="main"] .container { max-width: none; padding-left: 0; padding-right: 0; }
+
 /* Key findings */
 .oa-finding {
-  height: 100%;
-  border-top: 4px solid;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  border-left: 4px solid;
   border-radius: 10px;
-  padding: 1.1rem 1.2rem;
+  padding: 1rem 1.4rem;
   background: #f8f9fa;
 }
 .oa-finding-value {
-  font-size: 1.9rem; font-weight: 700; line-height: 1.1; margin-bottom: 0.35rem;
+  flex: 0 0 9.5rem;
+  white-space: nowrap;
+  font-size: 1.9rem; font-weight: 700; line-height: 1.1;
+}
+@media (max-width: 575px) {
+  .oa-finding { flex-direction: column; align-items: flex-start; gap: 0.35rem; }
+  .oa-finding-value { flex-basis: auto; }
 }
 .oa-finding-label {
   font-size: 0.9rem; font-weight: 600; color: #212529; margin-bottom: 0.3rem;
@@ -49,7 +61,7 @@ header.post-header {
 <!-- ============================================================ HERO -->
 <div class="container mt-5">
   <div class="row justify-content-center text-center">
-    <div class="col-lg-10">
+    <div class="col-12">
       <h1 class="mb-4">Skill-Guided Agentic Reasoning Enables Longitudinal Synthesis of Myeloma Records at Expert-Level Concordance</h1>
       <div class="mb-3" style="font-size:1rem; line-height:2">
         <span style="white-space:nowrap"><a href="https://jomoll.github.io">Johannes Moll</a><sup>*,†1,2,3</sup></span>,
@@ -87,9 +99,6 @@ header.post-header {
         <a href="https://www.nature.com/articles/s41698-026-01733-2" target="_blank" class="btn btn-dark btn-lg rounded-pill me-2 mb-2">
           <i class="fas fa-file-pdf me-1"></i> Paper
         </a>
-        <a href="https://arxiv.org/abs/2604.24473" target="_blank" class="btn btn-dark btn-lg rounded-pill me-2 mb-2">
-          <i class="ai ai-arxiv me-1"></i> arXiv
-        </a>
         <a href="https://github.com/jomoll/onco-agent" target="_blank" class="btn btn-dark btn-lg rounded-pill me-2 mb-2">
           <i class="fab fa-github me-1"></i> Code
         </a>
@@ -101,38 +110,46 @@ header.post-header {
 <!-- ============================================================ KEY FINDINGS -->
 <div class="container mb-5">
   <div class="row justify-content-center">
-    <div class="col-lg-10">
+    <div class="col-12">
       <h2 class="text-center mb-2">Key Findings</h2>
       <p class="text-center text-muted mb-4" style="font-size:0.92rem;">
         811 patients &middot; 44,962 documents &middot; 1,334,677 laboratory values &middot; 469 expert-adjudicated patient-question pairs
       </p>
       <div class="row g-3">
-        <div class="col-md-6 col-lg-3">
-          <div class="oa-finding" style="border-top-color:#0d6efd;">
+        <div class="col-12">
+          <div class="oa-finding" style="border-left-color:#0d6efd;">
             <div class="oa-finding-value" style="color:#0d6efd;">80.1%</div>
-            <div class="oa-finding-label">Above the non-agentic ceiling</div>
-            <p class="oa-finding-detail">Iterative RAG (75.7%) and full-context input (75.8%) converge on a shared ceiling. The skill-guided agent exceeds both.</p>
+            <div class="oa-finding-text">
+              <div class="oa-finding-label">Above the non-agentic ceiling</div>
+              <p class="oa-finding-detail">Iterative RAG (75.7%) and full-context input (75.8%) converge on a shared ceiling. The skill-guided agent exceeds both.</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="oa-finding" style="border-top-color:#6f42c1;">
+        <div class="col-12">
+          <div class="oa-finding" style="border-left-color:#6f42c1;">
             <div class="oa-finding-value" style="color:#6f42c1;">79.0%</div>
-            <div class="oa-finding-label">Skills drive the aggregate gain</div>
-            <p class="oa-finding-detail">Giving iterative RAG the same clinical skill library matches the agent overall. Removing the skills from the agent drops it to 76.6%.</p>
+            <div class="oa-finding-text">
+              <div class="oa-finding-label">Skills drive the aggregate gain</div>
+              <p class="oa-finding-detail">Giving iterative RAG the same clinical skill library matches the agent overall. Removing the skills from the agent drops it to 76.6%.</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="oa-finding" style="border-top-color:#198754;">
+        <div class="col-12">
+          <div class="oa-finding" style="border-left-color:#198754;">
             <div class="oa-finding-value" style="color:#198754;">+10.3 pp</div>
-            <div class="oa-finding-label">Agentic execution pays off on long records</div>
-            <p class="oa-finding-detail">Over skill-augmented RAG in the top decile of record length (<em>p</em> = 0.017; exploratory, 10 patients). On criteria-based synthesis, +11.2 pp over full context.</p>
+            <div class="oa-finding-text">
+              <div class="oa-finding-label">Agentic execution pays off on long records</div>
+              <p class="oa-finding-detail">Over skill-augmented RAG in the top decile of record length (<em>p</em> = 0.017; exploratory, 10 patients). On criteria-based synthesis, +11.2 pp over full context.</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="oa-finding" style="border-top-color:#dc3545;">
+        <div class="col-12">
+          <div class="oa-finding" style="border-left-color:#dc3545;">
             <div class="oa-finding-value" style="color:#dc3545;">57.8%</div>
-            <div class="oa-finding-label">Fewer errors, heavier errors</div>
-            <p class="oa-finding-detail">Error rate (12.2%) is comparable to expert disagreement (13.6%), but 57.8% of system errors are clinically significant versus 18.8% of expert disagreements.</p>
+            <div class="oa-finding-text">
+              <div class="oa-finding-label">Fewer errors, heavier errors</div>
+              <p class="oa-finding-detail">Error rate (12.2%) is comparable to expert disagreement (13.6%), but 57.8% of system errors are clinically significant versus 18.8% of expert disagreements.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -143,7 +160,7 @@ header.post-header {
 <!-- ============================================================ ABSTRACT -->
 <div class="container mt-4">
   <div class="row justify-content-center">
-    <div class="col-lg-10">
+    <div class="col-12">
       <h2 class="text-center mb-4">Abstract</h2>
       <p class="text-justify">
         Patients with multiple myeloma accumulate hundreds of clinical documents over years of sequential therapy, and every treatment decision depends on synthesis across that history. Whether large language model–based systems can match expert agreement on this task, and where they fail, has not been established. On longitudinal records of 811 patients treated over 25 years (44,962 documents and 1,334,677 laboratory values), an agentic reasoning system guided by an indexed clinical skill library was compared against single-pass retrieval-augmented generation (RAG), iterative RAG, iterative RAG augmented with the same skill library, and full-context input on 469 expert-adjudicated patient-question pairs, with an exploratory cross-dataset evaluation on MIMIC-IV. The skill-guided agent exceeded the ceiling at which iterative RAG (75.7%) and full-context input (75.8%) converged, reaching 80.1% concordance, with its advantage widening on the most complex tasks (+11.2 percentage points) and longest records. Providing the same skill library to iterative RAG matched the agent in aggregate (79.0%) and on shorter records, whereas the agent retained a significant advantage on the longest records (+10.3 percentage points in the top decile, <em>p</em> = 0.017) and a numerical, non-significant advantage on the most complex questions (+5.4 percentage points). The aggregate error rate (12.2%) was comparable to expert disagreement (13.6%), but a higher proportion of system errors were clinically significant (57.8 versus 18.8%).
@@ -157,7 +174,7 @@ header.post-header {
 <!-- ============================================================ METHOD -->
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-lg-10">
+    <div class="col-12">
       <h2 class="text-center mb-2">How Onco-Agent Works</h2>
       <p class="text-center text-muted mb-4" style="font-size:0.92rem;">
         Onco-Agent separates clinical reasoning from language generation. Question-specific reasoning protocols come from an indexed clinical <em>skill library</em>, evidence is gathered by an explicit tool-use plan, and contradictions are resolved by deterministic policies before the answer is written. The example below follows one eligibility question through the pipeline.
@@ -447,7 +464,7 @@ header.post-header {
 <!-- ============================================================ DEMO -->
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-lg-10">
+    <div class="col-12">
       <h2 class="text-center mb-4">Demo</h2>
       <div class="row g-3 text-center">
         <div class="col-md-4">
@@ -478,7 +495,7 @@ header.post-header {
 <!-- ============================================================ BIBTEX -->
 <div class="container mb-5">
   <div class="row justify-content-center">
-    <div class="col-lg-10">
+    <div class="col-12">
       <h2 class="text-center mb-4">BibTeX</h2>
       <pre><code>@article{moll2026agentic,
   title   = {Skill-guided agentic reasoning enables longitudinal synthesis of myeloma records at expert-level concordance},
