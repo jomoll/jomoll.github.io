@@ -498,8 +498,7 @@ html[data-theme="dark"] .oa-step-dot.inactive { background: var(--global-bg-colo
   author  = {Moll, Johannes and L{\"u}bberstedt, Jannik and Nuernbergk, Christoph and Stroh, Jacob and Mertens, Luisa and Purcarea, Anna and Zirn, Christopher and Benchaaben, Zeineb and Drexel, Fabian and H{\"a}ntze, Hartmut and Narayanan, Anirudh and Puttkammer, Friedrich and Zhukov, Andrei and Lammert, Jacqueline and Ziegelmayer, Sebastian and Graf, Markus and H{\"o}gner, Marion and Makowski, Marcus and Bassermann, Florian and Adams, Lisa C. and Pan, Jiazhen and Rueckert, Daniel and Braitsch, Krischan and Bressem, Keno K.},
   journal = {npj Precision Oncology},
   volume  = {10},
-  number  = {1},
-  pages   = {389},
+  eid     = {389},
   year    = {2026},
   doi     = {10.1038/s41698-026-01733-2}
 }</code></pre>
