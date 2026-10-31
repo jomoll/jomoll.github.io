@@ -157,11 +157,11 @@ header.post-header {
         <br><sup>†</sup>Equal senior authorship
       </div>
       <div class="mb-4">
-        <span class="badge rounded-pill px-3 py-2" style="background:#4b2e83; color:white; font-size:0.9rem;">Accepted to EMNLP 2026 &middot; Main Conference</span>
+        <span class="badge rounded-pill px-3 py-2" style="background:#4b2e83; color:white; font-size:0.9rem;">EMNLP 2026 &middot; Main Conference</span>
       </div>
       <div class="mt-2 mb-4">
-        <a href="https://arxiv.org/abs/2605.29668" target="_blank" class="btn btn-dark btn-lg rounded-pill me-2 mb-2">
-          <i class="ai ai-arxiv me-1"></i> Paper
+        <a href="https://aclanthology.org/2026.emnlp-main.452.pdf" target="_blank" class="btn btn-dark btn-lg rounded-pill me-2 mb-2">
+          <i class="fas fa-file-pdf me-1"></i> Paper
         </a>
         <a href="https://github.com/jomoll/GRASP" target="_blank" class="btn btn-dark btn-lg rounded-pill me-2 mb-2">
           <i class="fab fa-github me-1"></i> Code
@@ -196,7 +196,7 @@ header.post-header {
         LLM agents acting in structured environments fail in operational rather than conversational ways, and reliability depends on procedural knowledge of the environment. Prior self-improvement methods accumulate natural-language guidance without checking that each new item preserves previously correct behavior, so a note that fixes one trajectory can silently regress another. We introduce <strong>GRASP</strong> (Gated Regression-Aware Skill Proposer), which treats agent improvement as a sequence of edits to a bounded skill library, admitting each candidate only if it produces a net improvement on a balanced held-out probe under a hard regression budget.
       </p>
       <p class="text-justify">
-        We evaluate <strong>GRASP</strong> across five base models (gpt-oss-120b, DeepSeek V4 Flash, Gemini 3.1 Flash Lite, GPT-4.1, GPT-5.4) on two FHIR-based clinical benchmarks. On MedAgentBench, <strong>GRASP</strong> lifts gpt-oss-120b from 40.6% to 88.8%, exceeds the strongest of five self-improvement baselines by 21.0 points, and improves every other base model by 17.2 to 40.3 points. Ablations attribute the gain to comparative proposal generation, the acceptance gate, and the hard regression budget rather than to skill writing itself, which without validation is no better than using no skills. The mechanism generalizes beyond the clinical domain, improving agents on three of four non-clinical environments, and frozen libraries transfer across models. Skills from a stronger model improve weaker executors beyond what they learn for themselves while the reverse does not, an asymmetry that no ungated baseline reproduces.
+        We evaluate <strong>GRASP</strong> across five base models (gpt-oss-120b, DeepSeek V4 Flash, Gemini 3.1 Flash Lite, GPT-4.1, GPT-5.4) on two FHIR-based clinical benchmarks. On MedAgentBench, <strong>GRASP</strong> lifts gpt-oss-120b from 40.6% to 88.8%, exceeds the strongest of five self-improvement baselines by 21.0 points, and improves every other base model by 17.2 to 40.3 points. Ablations attribute the gain to comparative proposal generation, the acceptance gate, and the hard regression budget rather than to skill writing itself, which without validation is no better than using no skills. The mechanism generalizes beyond the clinical domain, improving agents on three of four non-clinical environments and remaining flat only where the action space is open-ended. Frozen libraries transfer across models, where skills from a stronger model improve weaker executors beyond what they learn for themselves while the reverse does not, an asymmetry that no ungated baseline reproduces.
       </p>
     </div>
   </div>
@@ -827,11 +827,28 @@ header.post-header {
     <div class="row justify-content-center">
       <div class="col-lg-9">
         <h2 class="text-center mb-4">BibTeX</h2>
-        <pre style="background:#f8f9fa; border-radius:8px; padding:1.2rem; font-size:0.85rem;"><code>@article{moll2026grasp,
-  title  = {GRASP: Gated Regression-Aware Skill Proposer for Self-Improving LLM Agents},
-  author = {Moll, Johannes and Corbeil, Jean-Philippe and Pan, Jiazhen and Hadamitzky, Martin and Rueckert, Daniel and Adams, Lisa and Bressem, Keno},
-  journal={arXiv preprint arXiv:2605.29668},
-  year={2026}
+        <pre style="background:#f8f9fa; border-radius:8px; padding:1.2rem; font-size:0.85rem;"><code>@inproceedings{moll2026grasp,
+    title = "{GRASP}: Gated Regression-Aware Skill Proposer for Self-Improving {LLM} Agents",
+    author = "Moll, Johannes  and
+      Corbeil, Jean-Philippe  and
+      Pan, Jiazhen  and
+      Hadamitzky, Martin  and
+      Rueckert, Daniel  and
+      Adams, Lisa C.  and
+      Bressem, Keno",
+    editor = "Lee, Hung-Yi  and
+      Dev, Sunipa  and
+      Li, Jessy  and
+      Elliott, Desmond",
+    booktitle = "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.emnlp-main.452/",
+    doi = "10.18653/2026.emnlp-main.452",
+    pages = "10390--10415",
+    ISBN = "979-8-89176-459-0"
 }</code></pre>
       </div>
     </div>
