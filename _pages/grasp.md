@@ -827,14 +827,14 @@ header.post-header {
     <div class="row justify-content-center">
       <div class="col-lg-9">
         <h2 class="text-center mb-4">BibTeX</h2>
-        <pre style="background:#f8f9fa; border-radius:8px; padding:1.2rem; font-size:0.85rem;"><code>@inproceedings{moll2026grasp,
+        <pre style="background:#f8f9fa; border-radius:8px; padding:1.2rem; font-size:0.85rem;">{% raw %}<code>@inproceedings{moll2026grasp,
   title     = {{GRASP}: Gated Regression-Aware Skill Proposer for Self-Improving {LLM} Agents},
   author    = {Moll, Johannes and Corbeil, Jean-Philippe and Pan, Jiazhen and Hadamitzky, Martin and Rueckert, Daniel and Adams, Lisa C. and Bressem, Keno},
   booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},
   year      = {2026},
   publisher = {Association for Computational Linguistics},
   doi       = {10.18653/2026.emnlp-main.452}
-}</code></pre>
+}</code>{% endraw %}</pre>
       </div>
     </div>
   </div>
