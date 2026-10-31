@@ -828,18 +828,12 @@ header.post-header {
       <div class="col-lg-9">
         <h2 class="text-center mb-4">BibTeX</h2>
         <pre style="background:#f8f9fa; border-radius:8px; padding:1.2rem; font-size:0.85rem;"><code>@inproceedings{moll2026grasp,
-    title = "{GRASP}: Gated Regression-Aware Skill Proposer for Self-Improving {LLM} Agents",
-    author = "Moll, Johannes and Corbeil, Jean-Philippe and Pan, Jiazhen and Hadamitzky, Martin and Rueckert, Daniel and Adams, Lisa C. and Bressem, Keno",
-    editor = "Lee, Hung-Yi and Dev, Sunipa and Li, Jessy and Elliott, Desmond",
-    booktitle = "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
-    month = oct,
-    year = "2026",
-    address = "Budapest, Hungary",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2026.emnlp-main.452/",
-    doi = "10.18653/2026.emnlp-main.452",
-    pages = "10390--10415",
-    ISBN = "979-8-89176-459-0"
+  title     = {{GRASP}: Gated Regression-Aware Skill Proposer for Self-Improving {LLM} Agents},
+  author    = {Moll, Johannes and Corbeil, Jean-Philippe and Pan, Jiazhen and Hadamitzky, Martin and Rueckert, Daniel and Adams, Lisa C. and Bressem, Keno},
+  booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},
+  year      = {2026},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/2026.emnlp-main.452}
 }</code></pre>
       </div>
     </div>
